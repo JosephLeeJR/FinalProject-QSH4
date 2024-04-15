@@ -14,7 +14,7 @@ model.load_weights('D:/finalproject/outcomes/LSTM5.result_retrain_pers_random_cb
 
 
 def plot_rppg_and_bp(index):
-    data_file = 'D:/finalproject/data/rPPG-BP-UKL_rppg_7s.h5'
+    data_file = 'D:/finalproject/data/rPPG-BP-UKL_rppg_7s.h5' # Replace with the real path to rPPG dataset
     with h5py.File(data_file, 'r') as f:
         rppg = f.get('rppg')
         rppg = np.transpose(np.array(rppg), axes=(1, 0))
